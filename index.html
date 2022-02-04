@@ -90,7 +90,8 @@
                         .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
 
                     // Artist
-                    $("<td width='20%'>" + info[i].artist + "</td>").appendTo(str);
+                    $("<td width='20%'>" +
+                       "<a href='" + info[i].url + "'>" + info[i].artist + "</a></td>").appendTo(str);
 
                     // Comment
                     $("<td width='30%'>" + info[i].comment + "</td>").appendTo(str);
