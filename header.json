@@ -2,38 +2,4 @@
 "name" : "PIANIT BMS TABLE(lx)",
 "symbol" : "lx",
 "data_url" : "https://script.google.com/macros/s/AKfycbw0iRlYqO-F1_E3GAWKOIHOVFVNWDDU-tw43DNjtoFZgUh7RnrhwQtS0SKJJsvX17P1/exec"
-"course":[
-	[
-		{
-			"name":"test",
-			"constraint":["grade_mirror"],
-			"trophy":[
-				{
-					"name":"silvermedal",
-					"missrate":5.0,
-					"scorerate":70.0
-				},
-				{
-					"name":"goldmedal",
-					"missrate":2.5,
-					"scorerate":85.0
-				}
-			],
-			"md5":[
-				"35175febc004bff51eb567417362b8ef",
-				"d42e735c4948e3394d54feff7a81b111",
-				"9afb1496687e1ed64e642b3186b3f557",
-				"2c42c48e50b542d6c7cfc8f76c756c17"
-			]
-		},
-		.
-		.
-		.			
-	],
-	[
-		.
-		.
-		.
-	]
-]
 }
