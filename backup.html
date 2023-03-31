@@ -144,17 +144,7 @@ function makeBMSTable(info, mark, order) {
     // 表のクリア
     obj.html("");
     $("<tr height='20' style='color:white;background-color:#666666'>
-      <td align='center'>LV</td>
-      // <td align='center'>영상</td>
-      <td align='center'>패턴</td>
-      // <td align='center'>Mocha</td>
-      <td align='center'>타이틀(누르면 LR2IR 페이지로 이동)</td>
-      <td align='center'>작곡가(누르면 BMS 투고 페이지로 이동)</td>
-	// <td align='center'>差分</td>
-	<td align='center'>노트수</td>
-	<td align='center'>토탈값(+증가율)</td>
-	<td align='center'>memo</td>
-	<td align='center'>코멘트</td></tr>").appendTo(obj);
+      <td align='center'>LV</td><td align='center'>패턴</td><td align='center'>타이틀(누르면 LR2IR 페이지로 이동)</td><td align='center'>작곡가(누르면 BMS 투고 페이지로 이동)</td><td align='center'>노트수</td><td align='center'>토탈값(+증가율)</td><td align='center'>memo</td><td align='center'>코멘트</td></tr>").appendTo(obj);
     var obj_sep = null;
     for (var i = 0; i < info.length; i++) {
         // 難度ごとの区切り
@@ -193,24 +183,9 @@ function makeBMSTable(info, mark, order) {
 
         // レベル表記
         $("<td width='3%'>" + mark + x + "</td>").appendTo(str);
-        // 動画
-	//	if(info[i].video1 != "" && info[i].video1 != null){
-	//		// ニコニコ
-	//		$("<td width='1%' align='center'><a href='http://www.nicovideo.jp/watch/sm" + info[i].video1 + "' target='_blank'><img src='/style/nico.gif' border='0' alt='ニコニコ動画' /></a></td>").appendTo(str);
-	//	} else if(info[i].video2 != "" && info[i].video2 != null){
-	//		// YouTube
-	//		$("<td width='1%' align='center'><a href='http://www.youtube.com/watch?v=" + info[i].video2 + "' target='_blank'><img src='/style/youtube.gif' border='0' alt='Youtube' /></a></td>").appendTo(str);
-	//	} else if(info[i].video3 != "" && info[i].video3 != null){
-	//		// vimeo
-	//		$("<td width='1%' align='center'><a href='http://vimeo.com/" + info[i].video3 + "' target='_blank'><img src='/style/vimeo.gif' border='0' alt='vimeo' /></a></td>").appendTo(str);
-	//	} else {
-        //	$("<td width='1%'></td>").appendTo(str);
-	//	}
+
 　　　　// 譜面画像
 　　　　$("<td width='1%' align='center'><a href='http://www.ribbit.xyz/bms/score/view?p=1&md5=" + info[i].md5 + "' target='_blank'>♪</a></td>").appendTo(str);
-
-　　　　// mocha
-　　　　// $("<td width='3%' align='center'><a href='https://mocha-repository.info/song.php?sha256=" + info[i].sha256 + "' target='_blank'>■</a></td>").appendTo(str);
 
         // タイトル
         $("<td width='12%'>" + "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[i].md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
@@ -239,20 +214,6 @@ function makeBMSTable(info, mark, order) {
         	}
         }
         $("<td width='10%'>" + astr + "</td>").appendTo(str);
-        // 差分
-       // if(info[i].url_diff != "" && info[i].url_diff != null) {
-       //	if(info[i].name_diff != "" && info[i].name_diff != null) {
-	//        $("<td width='10%'><a href='" + info[i].url_diff + "'>" + info[i].name_diff + "</a></td>").appendTo(str);
-       //	} else {
-	//        $("<td width='10%'><a href='" + info[i].url_diff + "'>" + info[i].url_diff + "</a></td>").appendTo(str);
-       //	}
-       // } else {
-       //	if(info[i].name_diff != "" && info[i].name_diff != null) {
-	//        $("<td width='10%'>" + info[i].name_diff + "</td>").appendTo(str);
-       //	} else {
-	//        $("<td width='10%'></td>").appendTo(str);
-       //	}
-       // }
 
         //Notes
         $("<td width='3%'>" + info[i].notes + "</td>").appendTo(str);
