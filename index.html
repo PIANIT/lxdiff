@@ -52,6 +52,19 @@
 </div>
 
 <script language="javascript" type="text/javascript">
+	
+
+// メニュー開閉
+function menu(tName){
+	var tMenu = document.getElementById(tName).style;
+	if (tMenu.display == 'none'){
+		tMenu.display = "block";
+	}else{
+		tMenu.display = "none";
+	}
+}
+
+
 $(document).ready(function(){
 	$.getJSON($("meta[name=bmstable]").attr("content"), function(header){
 		$.getJSON(header.data_url, function(information){
