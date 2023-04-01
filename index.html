@@ -229,7 +229,7 @@ function makeBMSTable(info, mark, order) {
         $("<td width='14%'>" + info[i].memo + "</td>").appendTo(str);
 
         // コメント
-        $("<td width='25%'><a href='javaScript:menu(\"" + info[i].md5 + "\")'>→</a><div id='" + info[i].md5 + "' style='display:none'>" + info[i].comment + "</div></td>").appendTo(str);
+        $("<td width='25%'><a href='javaScript:menu(\"" + info[i].md5 + "\")'>OPEN</a><div id='" + info[i].md5 + "' style='display:none'>" + info[i].comment + "</div></td>").appendTo(str);
         str.appendTo(obj);
         count++;
     }
