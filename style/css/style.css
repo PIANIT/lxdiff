@@ -71,9 +71,11 @@ body.diff {
 
 .tableflame table {
   font-size: 12px;
+  border-collapse: collapse;
 }
 
-.tableflame td {
+.tableflame th, td {
+    border: 1px solid #444444;
   table-layout: fixed;
 }
 
