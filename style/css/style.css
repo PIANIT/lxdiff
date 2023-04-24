@@ -10,6 +10,7 @@ body.diff {
   width: auto;
   min-width: 900px;
   line-height: 1.5;
+  border-color: #BDBDBD;
 }
 
 .tableflame {
