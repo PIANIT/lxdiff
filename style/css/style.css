@@ -19,7 +19,6 @@ body.diff {
   text-align: center;
   background-color: #222222;
   min-width: 900px;
-  border-color: #BDBDBD;
 }
 
 .tableflame a {
@@ -75,7 +74,6 @@ body.diff {
 }
 
 .tableflame td {
-  border-color: #BDBDBD;
   table-layout: fixed;
 }
 
